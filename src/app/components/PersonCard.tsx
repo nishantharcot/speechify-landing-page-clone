@@ -10,7 +10,7 @@ type PersonCardProps = {
 
 const PersonCard = (person: PersonCardProps) => {
   return (
-    <div className="flex flex-col overflow-hidden bg-black text-center text-white shadow-slate-200">
+    <div className="flex flex-col overflow-hidden text-center text-inherit shadow-slate-200">
       {/*  <!-- Icon --> */}
       <div className="flex justify-center">
         <Image src={person.photo} alt="personImage" width="80" height="80" />
