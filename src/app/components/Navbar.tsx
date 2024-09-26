@@ -1,9 +1,9 @@
-import React, { useState } from "react"
-import Image from "next/image"
-import TryForFreeButton from "./TryForFreeButton"
+import React, { useState } from 'react';
+import Image from 'next/image';
+import TryForFreeButton from './TryForFreeButton';
 
 export default function NavbarActionButton() {
-  const [isToggleOpen, setIsToggleOpen] = useState(false)
+  const [isToggleOpen, setIsToggleOpen] = useState(false);
 
   return (
     <>
@@ -23,22 +23,19 @@ export default function NavbarActionButton() {
               className="flex items-center gap-2 whitespace-nowrap py-3 text-lg focus:outline-none"
               href="javascript:void(0)"
             >
-
-              <Image src={`/speechify.png`} width="180" height="180" alt={""} />
+              <Image src={`/speechify.png`} width="180" height="180" alt={''} />
               {/* Speechify */}
             </a>
-            
+
             {/*      <!-- Mobile trigger --> */}
             <button
-              className={`relative order-10 block h-10 w-10 self-center lg:hidden
-              ${
+              className={`relative order-10 block h-10 w-10 self-center lg:hidden ${
                 isToggleOpen
-                  ? "visible opacity-100 [&_span:nth-child(1)]:w-6 [&_span:nth-child(1)]:translate-y-0 [&_span:nth-child(1)]:rotate-45 [&_span:nth-child(2)]:-rotate-45 [&_span:nth-child(3)]:w-0 "
-                  : ""
-              }
-            `}
+                  ? 'visible opacity-100 [&_span:nth-child(1)]:w-6 [&_span:nth-child(1)]:translate-y-0 [&_span:nth-child(1)]:rotate-45 [&_span:nth-child(2)]:-rotate-45 [&_span:nth-child(3)]:w-0'
+                  : ''
+              } `}
               onClick={() => setIsToggleOpen(!isToggleOpen)}
-              aria-expanded={isToggleOpen ? "true" : "false"}
+              aria-expanded={isToggleOpen ? 'true' : 'false'}
               aria-label="Toggle navigation"
             >
               <div className="absolute left-1/2 top-1/2 w-6 -translate-x-1/2 -translate-y-1/2 transform">
@@ -57,15 +54,13 @@ export default function NavbarActionButton() {
               </div>
             </button>
 
-              {/* Middle Navigation Links */}
+            {/* Middle Navigation Links */}
             <div>
               <ul
                 role="menubar"
                 aria-label="Select page"
-                className={`absolute left-0 top-0 z-[-1] h-[28.5rem] w-full justify-center overflow-hidden  overflow-y-auto overscroll-contain bg-white/90 px-8 pb-12 pt-24 font-medium transition-[opacity,visibility] duration-300 lg:visible lg:relative lg:top-0  lg:z-0 lg:flex lg:h-full lg:w-auto lg:items-stretch lg:overflow-visible lg:bg-white/0 lg:px-0 lg:py-0  lg:pt-0 lg:opacity-100 ${
-                  isToggleOpen
-                    ? "visible opacity-100 backdrop-blur-sm"
-                    : "invisible opacity-0"
+                className={`absolute left-0 top-0 z-[-1] h-[28.5rem] w-full justify-center overflow-hidden overflow-y-auto overscroll-contain bg-white/90 px-8 pb-12 pt-24 font-medium transition-[opacity,visibility] duration-300 lg:visible lg:relative lg:top-0 lg:z-0 lg:flex lg:h-full lg:w-auto lg:items-stretch lg:overflow-visible lg:bg-white/0 lg:px-0 lg:py-0 lg:pt-0 lg:opacity-100 ${
+                  isToggleOpen ? 'visible opacity-100 backdrop-blur-sm' : 'invisible opacity-0'
                 }`}
               >
                 <li role="none" className="flex items-stretch">
@@ -123,16 +118,15 @@ export default function NavbarActionButton() {
             </div>
 
             {/*      <!-- End Navigation links --> */}
-            <div className={`absolute left-0 top-0 z-[-1] h-[28.5rem] w-full justify-center overflow-hidden  overflow-y-auto overscroll-contain bg-white/90 px-8 pb-12 pt-24 font-medium transition-[opacity,visibility] duration-300 lg:visible lg:relative lg:top-0  lg:z-0 lg:flex lg:h-full lg:w-auto lg:items-stretch lg:overflow-visible lg:bg-white/0 lg:px-0 lg:py-0  lg:pt-0 lg:opacity-100 ${
-                  isToggleOpen
-                    ? "visible opacity-100 backdrop-blur-sm"
-                    : "invisible opacity-0"
-                }`}>
+            <div
+              className={`absolute left-0 top-0 z-[-1] h-[28.5rem] w-full justify-center overflow-hidden overflow-y-auto overscroll-contain bg-white/90 px-8 pb-12 pt-24 font-medium transition-[opacity,visibility] duration-300 lg:visible lg:relative lg:top-0 lg:z-0 lg:flex lg:h-full lg:w-auto lg:items-stretch lg:overflow-visible lg:bg-white/0 lg:px-0 lg:py-0 lg:pt-0 lg:opacity-100 ${
+                isToggleOpen ? 'visible opacity-100 backdrop-blur-sm' : 'invisible opacity-0'
+              }`}
+            >
               <ul
                 role="menubar"
                 aria-label="Select page"
-                className={`absolute left-0 top-0 z-[-1] h-[28.5rem] w-full justify-center overflow-hidden  overflow-y-auto overscroll-contain bg-white/90 px-8 pb-12 pt-24 font-medium transition-[opacity,visibility] duration-300 lg:visible lg:relative lg:top-0  lg:z-0 lg:flex lg:h-full lg:w-auto lg:items-stretch lg:overflow-visible lg:bg-white/0 lg:px-0 lg:py-0  lg:pt-0 lg:opacity-100
-                `}
+                className={`absolute left-0 top-0 z-[-1] h-[28.5rem] w-full justify-center overflow-hidden overflow-y-auto overscroll-contain bg-white/90 px-8 pb-12 pt-24 font-medium transition-[opacity,visibility] duration-300 lg:visible lg:relative lg:top-0 lg:z-0 lg:flex lg:h-full lg:w-auto lg:items-stretch lg:overflow-visible lg:bg-white/0 lg:px-0 lg:py-0 lg:pt-0 lg:opacity-100`}
               >
                 <li role="none" className="flex items-stretch">
                   <a
@@ -161,5 +155,5 @@ export default function NavbarActionButton() {
       </header>
       {/*<!-- End Navbar with CTA --> */}
     </>
-  )
+  );
 }

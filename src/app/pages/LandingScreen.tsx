@@ -1,14 +1,13 @@
-import Image from "next/image";
-import NavbarSimple from "../components/Navbar";
-import MainBanner from "../components/MainBanner";
+import NavbarSimple from '../components/Navbar';
+import MainBanner from '../components/MainBanner';
 
 const LandingScreen = () => {
-    return (
-      <>
-        <NavbarSimple />
-        <MainBanner />
-      </>
-      )
-}
+  return (
+    <>
+      <NavbarSimple />
+      <MainBanner />
+    </>
+  );
+};
 
-export default LandingScreen
+export default LandingScreen;
