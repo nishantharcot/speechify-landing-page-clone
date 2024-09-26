@@ -9,8 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/cache": "^11.13.1",
+    "@emotion/styled": "^11.13.0",
     "@heroicons/react": "^2.1.5",
     "@material-tailwind/react": "^2.1.0",
+    "@mui/icons-material": "^6.1.1",
+    "@mui/material-nextjs": "^6.1.1",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "lucide-react": "^0.446.0",
