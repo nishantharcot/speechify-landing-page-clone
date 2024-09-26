@@ -1,24 +1,62 @@
-import React from "react"
-
-export default function FormElementsTextareaPlainBaseBasic() {
+import React from "react";
+import {
+  Tabs,
+  TabsHeader,
+  TabsBody,
+  Tab,
+  TabPanel,
+} from "@material-tailwind/react";
+import {
+  Square3Stack3DIcon,
+  UserCircleIcon,
+  Cog6ToothIcon,
+} from "@heroicons/react/24/solid";
+ 
+export default function TabsWithIcon() {
+  const data = [
+    {
+      label: "Chrome Extension",
+      value: "dashboard",
+      icon: Square3Stack3DIcon,
+      desc: `It really matters and then like it really doesn't matter.
+      What matters is the people who are sparked by it. And the people
+      who are like offended by it, it doesn't matter.`,
+    },
+    {
+      label: "Profile",
+      value: "profile",
+      icon: UserCircleIcon,
+      desc: `Because it's about motivating the doers. Because I'm here
+      to follow my dreams and inspire other people to follow their dreams, too.`,
+    },
+    {
+      label: "Settings",
+      value: "settings",
+      icon: Cog6ToothIcon,
+      desc: `We're not always in the position that we want to be at.
+      We're constantly growing. We're constantly making mistakes. We're
+      constantly trying to express ourselves and actualize our dreams.`,
+    },
+  ];
   return (
-    <>
-      {/*<!-- Component: Plain base size basic textarea --> */}
-      <div className="relative">
-        <textarea
-          id="id-b02"
-          name="id-b02"
-          placeholder="Write your message"
-          className="peer relative w-full border-b border-slate-200 px-4 py-2 text-sm text-slate-500 placeholder-transparent outline-none transition-all autofill:bg-white invalid:border-pink-500 invalid:text-pink-500 focus:border-emerald-500 focus:outline-none invalid:focus:border-pink-500 focus-visible:outline-none disabled:cursor-not-allowed disabled:bg-slate-50 disabled:text-slate-400"
-        ></textarea>
-        <label
-          htmlFor="id-b02"
-          className="absolute left-2 -top-2 z-[1] cursor-text px-2 text-xs text-slate-400 transition-all before:absolute before:top-0 before:left-0 before:z-[-1] before:block before:h-full before:w-full before:bg-white before:transition-all peer-placeholder-shown:top-2.5 peer-placeholder-shown:text-sm peer-required:after:text-pink-500 peer-required:after:content-['\00a0*'] peer-invalid:text-pink-500 peer-focus:-top-2 peer-focus:cursor-default peer-focus:text-xs peer-focus:text-emerald-500 peer-invalid:peer-focus:text-pink-500 peer-disabled:cursor-not-allowed peer-disabled:text-slate-400 peer-disabled:before:bg-transparent"
-        >
-          Write your message
-        </label>
-      </div>
-      {/*<!-- End Plain base size basic textarea --> */}
-    </>
-  )
+    <Tabs value="dashboard">
+      <TabsHeader>
+        {data.map(({ label, value, icon }) => (
+          <Tab key={value} value={value}>
+            <div className="flex items-center gap-2">
+              {React.createElement(icon, { className: "w-5 h-5" })}
+              {label}
+            </div>
+          </Tab>
+        ))}
+      </TabsHeader>
+      <TabsBody>
+        {data.map(({ value, desc }) => (
+          <TabPanel key={value} value={value}>
+            {desc}
+          </TabPanel>
+        ))}
+      </TabsBody>
+    </Tabs>
+  );
 }

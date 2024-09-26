@@ -1,6 +1,6 @@
-import countryList from "../data/countryListData";
-import CountryOptionCard from "./CountryOptionCard";
-import PersonCard from "./PersonCard";
+import countryList from "../../data/countryListData";
+import CountryOptionCard from "../CountryOptionCard";
+import PersonCard from "../PersonCard";
 
 const TryItYourselfBanner = () => {
 
