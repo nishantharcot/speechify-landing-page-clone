@@ -8,6 +8,7 @@ import FeaturesBanner from '../components/Banners/FeaturesBanner';
 import ScanAndListenBanner from '../components/Banners/ScanAndListenBanner';
 import FAQBanner from '../components/Banners/FAQBanner';
 import CEOBanner from '../components/Banners/CEOBanner';
+import Footer from '../components/Footer';
 
 const LandingScreen = () => {
   return (
@@ -22,6 +23,7 @@ const LandingScreen = () => {
       <ScanAndListenBanner />
       <CEOBanner />
       <FAQBanner />
+      <Footer />
     </div>
   );
 };
