@@ -58,7 +58,7 @@ const TryItYourselfBanner = () => {
 
 
   return (
-    <section className="bg-black py-12">
+    <section className="bg-black py-12 ">
       <div className="px-6 text-white">
         <div className="text-5xl">
           Try it Yourself
