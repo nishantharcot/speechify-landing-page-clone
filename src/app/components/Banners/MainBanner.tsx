@@ -1,5 +1,5 @@
 import React from 'react';
-import TryForFreeButton from '../TryForFreeButton';
+import TryForFreeButton from '../Buttons/TryForFreeButton';
 import PersonCard from '../PersonCard';
 import AppleIcon from '@mui/icons-material/Apple';
 import LanguageIcon from '@mui/icons-material/Language';

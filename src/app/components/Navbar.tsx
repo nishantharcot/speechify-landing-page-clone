@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
-import TryForFreeButton from './TryForFreeButton';
+import TryForFreeButton from './Buttons/TryForFreeButton';
 
 export default function NavbarActionButton() {
   const [isToggleOpen, setIsToggleOpen] = useState(false);

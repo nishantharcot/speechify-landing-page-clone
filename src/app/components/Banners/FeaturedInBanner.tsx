@@ -11,8 +11,6 @@ const FeaturedInBanner = () => {
     'wall-st.svg'
   ]
 
-
-
   return (
     <section className="bg-black text-white pt-12">
       <div className="flex flex-col justify-center items-center min-h-[50vh]">
