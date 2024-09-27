@@ -1,14 +1,7 @@
 import { ReactElement } from 'react';
 import GoogleIcon from '@mui/icons-material/Google';
 import StarIcon from '@mui/icons-material/Star';
-
-type TabInfoProps = {
-  firstText: string;
-  buttonIcon?: ReactElement;
-  buttonText: string;
-  comments: ReactElement;
-  bannerImage: ReactElement;
-};
+import { TabInfoProps } from '../../data/tabInfoData';
 
 let tabInfoData = {
   firstText: 'Let Speechify read to you while you walk to work, go for a run, or do laundry. Get through PDFs, books, articles, docs & emails twice as fast.',
@@ -39,7 +32,7 @@ let tabInfoData = {
   </div>
 }
 
-const TabInfo = () => {
+const TabInfo = (tabInfoData: TabInfoProps) => {
   return (
     <section className="bg-black pt-12 px-6">
       <div className='grid grid-cols-1 md:grid-cols-2'>
@@ -67,7 +60,7 @@ const TabInfo = () => {
         </div>
         <div className='order-first md:order-last rounded-6'>
           <video controls className='rounded-6 w-full h-full'>
-            <source src="/videos/chrome-extension.mp4" type="video/mp4" />
+            <source src={tabInfoData.bannerVideo} type="video/mp4" />
           </video>
         </div>
       </div>

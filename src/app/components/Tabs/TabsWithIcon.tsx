@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import { Tabs, TabsHeader, TabsBody, Tab, TabPanel } from '@material-tailwind/react';
 import { Square3Stack3DIcon, UserCircleIcon, Cog6ToothIcon } from '@heroicons/react/24/solid';
 import GoogleIcon from '@mui/icons-material/Google';
@@ -7,6 +7,8 @@ import AndroidIcon from '@mui/icons-material/Android';
 import LanguageIcon from '@mui/icons-material/Language';
 import DesktopMacIcon from '@mui/icons-material/DesktopMac';
 import TabInfo from './TabInfo';
+import tabInfoData from '../../data/tabInfoData';
+
 
 export default function TabsWithIcon() {
   const data = [
@@ -14,38 +16,31 @@ export default function TabsWithIcon() {
       label: 'Chrome Extension',
       value: 'chrome',
       icon: <GoogleIcon />,
-      desc: <TabInfo />
+      desc: <TabInfo {...tabInfoData[0]}/>
     },
     {
       label: 'iOS',
       value: 'profile',
       icon: <AppleIcon />,
-      desc: `Because it's about motivating the doers. Because I'm here
-      to follow my dreams and inspire other people to follow their dreams, too.`,
+      desc: <TabInfo {...tabInfoData[1]} />
     },
     {
       label: 'Android',
       value: 'android',
       icon: <AndroidIcon />,
-      desc: `We're not always in the position that we want to be at.
-      We're constantly growing. We're constantly making mistakes. We're
-      constantly trying to express ourselves and actualize our dreams.`,
+      desc: <TabInfo {...tabInfoData[2]} />
     },
     {
       label: 'Web App',
       value: 'web-app',
       icon: <LanguageIcon />,
-      desc: `We're not always in the position that we want to be at.
-        We're constantly growing. We're constantly making mistakes. We're
-        constantly trying to express ourselves and actualize our dreams.`,
+      desc: <TabInfo {...tabInfoData[3]} />
     },
     {
       label: 'Mac App',
       value: 'mac-app',
       icon: <DesktopMacIcon />,
-      desc: `We're not always in the position that we want to be at.
-        We're constantly growing. We're constantly making mistakes. We're
-        constantly trying to express ourselves and actualize our dreams.`,
+      desc: <TabInfo {...tabInfoData[4]} />
     },
   ];
   return (
