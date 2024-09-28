@@ -1,28 +1,4 @@
-import GoogleIcon from '@mui/icons-material/Google';
-import StarIcon from '@mui/icons-material/Star';
 import { TabInfoProps } from '../../data/tabInfoData';
-
-const tabInfoData = {
-  firstText:
-    'Let Speechify read to you while you walk to work, go for a run, or do laundry. Get through PDFs, books, articles, docs & emails twice as fast.',
-  buttonIcon: <GoogleIcon />,
-  buttonText: 'Add to Chrome',
-  comments: (
-    <div className="flex flex-row gap-x-6 md:flex-row">
-      <div className="flex flex-col">
-        <div>Favourite App of 2023</div>
-        <div>by Google Chrome</div>
-      </div>
-      <div className="flex flex-col">
-        <div>
-          <StarIcon />
-          <span className="pl-2">4.5</span>
-        </div>
-        <div>12.5k ratings</div>
-      </div>
-    </div>
-  ),
-};
 
 const TabInfo = (tabInfoData: TabInfoProps) => {
   return (
