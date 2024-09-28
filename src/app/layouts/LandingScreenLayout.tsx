@@ -1,7 +1,20 @@
 import React from 'react';
 import { Navbar, MobileNav, Typography, Button, IconButton, Card } from '@material-tailwind/react';
+import MainBanner from '../components/Banners/MainBanner';
+import TryItYourselfBanner from '../components/Banners/TryItYourselfBanner';
+import FeaturedInBanner from '../components/Banners/FeaturedInBanner';
+import ListenAnywhereBanner from '../components/Banners/ListenAnywhereBanner';
+import ListenToAnythingBanner from '../components/Banners/ListenToAnythingBanner';
+import FeaturesBanner from '../components/Banners/FeaturesBanner';
+import ScanAndListenBanner from '../components/Banners/ScanAndListenBanner';
+import FAQBanner from '../components/Banners/FAQBanner';
+import CEOBanner from '../components/Banners/CEOBanner';
+import Footer from '../components/Footer';
+import ReviewBanner from '../components/Banners/ReviewBanner';
+import Image from 'next/image';
+import TryForFreeButton from '../components/Buttons/TryForFreeButton';
 
-export default function StickyNavbar() {
+export default function LandingScreenLayout() {
   const [openNav, setOpenNav] = React.useState(false);
 
   React.useEffect(() => {
@@ -12,33 +25,38 @@ export default function StickyNavbar() {
     <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
       <Typography as="li" variant="small" color="blue-gray" className="p-1 font-normal">
         <a href="#" className="flex items-center">
-          Pages
+          Text to Speech
         </a>
       </Typography>
       <Typography as="li" variant="small" color="blue-gray" className="p-1 font-normal">
         <a href="#" className="flex items-center">
-          Account
+          Creators
         </a>
       </Typography>
       <Typography as="li" variant="small" color="blue-gray" className="p-1 font-normal">
         <a href="#" className="flex items-center">
-          Blocks
+          Developers
         </a>
       </Typography>
       <Typography as="li" variant="small" color="blue-gray" className="p-1 font-normal">
         <a href="#" className="flex items-center">
-          Docs
+          Solutions
+        </a>
+      </Typography>
+      <Typography as="li" variant="small" color="blue-gray" className="p-1 font-normal">
+        <a href="#" className="flex items-center">
+          About
         </a>
       </Typography>
     </ul>
   );
 
   return (
-    <div className="-m-6 max-h-[768px] w-[calc(100%+48px)] overflow-scroll">
+    <div className="w-[calc(100%+48px)]">
       <Navbar className="sticky top-0 z-10 h-max max-w-full rounded-none bg-black px-4 py-2 lg:px-8 lg:py-4">
         <div className="text-blue-gray-900 flex items-center justify-between p-6">
           <Typography as="a" href="#" className="mr-4 cursor-pointer py-1.5 font-medium">
-            Material Tailwind
+            <Image src={`/speechify.png`} width="180" height="180" alt="Speechify" />
           </Typography>
           <div className="flex items-center gap-4">
             <div className="mr-4 hidden lg:block">{navList}</div>
@@ -47,7 +65,9 @@ export default function StickyNavbar() {
                 <span>Log In</span>
               </Button>
               <Button variant="gradient" size="sm" className="hidden lg:inline-block">
-                <span>Sign in</span>
+                <span>
+                  <TryForFreeButton />
+                </span>
               </Button>
             </div>
             <IconButton
@@ -88,11 +108,24 @@ export default function StickyNavbar() {
               <span>Log In</span>
             </Button>
             <Button fullWidth variant="gradient" size="sm" className="">
-              <span>Sign in</span>
+              <TryForFreeButton />
             </Button>
           </div>
         </MobileNav>
       </Navbar>
+      <div className="space-y-12 bg-black pt-12">
+        <MainBanner />
+        <TryItYourselfBanner />
+        <FeaturedInBanner />
+        <ListenAnywhereBanner />
+        <ListenToAnythingBanner />
+        <FeaturesBanner />
+        <ScanAndListenBanner />
+        <ReviewBanner />
+        <CEOBanner />
+        <FAQBanner />
+        <Footer />
+      </div>
     </div>
   );
 }
