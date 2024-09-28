@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, MobileNav, Typography, Button, IconButton, Card } from '@material-tailwind/react';
+import { Navbar, MobileNav, Typography, Button, IconButton } from '@material-tailwind/react';
 
 export default function StickyNavbar() {
   const [openNav, setOpenNav] = React.useState(false);

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, MobileNav, Typography, Button, IconButton, Card } from '@material-tailwind/react';
+import { Navbar, MobileNav, Typography, Button, IconButton } from '@material-tailwind/react';
 import MainBanner from '../components/Banners/MainBanner';
 import TryItYourselfBanner from '../components/Banners/TryItYourselfBanner';
 import FeaturedInBanner from '../components/Banners/FeaturedInBanner';
