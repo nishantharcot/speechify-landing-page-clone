@@ -11,7 +11,7 @@ const FAQBanner = () => {
 
 
   return (
-    <div className="flex min-h-[100vh] flex-col justify-center bg-black text-white">
+    <div className="flex md:min-h-[100vh] flex-col justify-center bg-black text-white">
       <div className="mb-4 text-3xl uppercase md:text-7xl text-center">
         FAQ
       </div>

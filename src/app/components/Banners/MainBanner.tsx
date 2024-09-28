@@ -34,7 +34,7 @@ export default function MainBanner() {
   ];
 
   return (
-    <section className="bg-black pt-12">
+    <section className="bg-black">
       <div className="px-6 text-white">
         <div className="flex min-h-[60vh] flex-col justify-between">
           <div className="flex flex-col">
@@ -70,7 +70,7 @@ export default function MainBanner() {
                   <CheckCircleIcon fontSize="small" />
                   <span className="pl-1">Official Speechify partnership</span>
                 </div>
-                <div className="flex flex-wrap justify-center">
+                <div className="flex gap-x-4 flex-wrap justify-center">
                   {personsData.map((data, i) => {
                     return (
                       <div className="" key={i}>

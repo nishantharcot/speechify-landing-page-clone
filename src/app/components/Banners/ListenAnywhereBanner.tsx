@@ -5,7 +5,7 @@ import TabsWithIcon from "../Tabs/TabsWithIcon";
 
 const ListenAnywhereBanner = () => {
   return (
-    <section className="bg-black text-white px-6 py-12">
+    <section className="bg-black text-white px-6">
       <div className="text-3xl md:text-7xl mb-4">
         LISTEN ANYWHERE
       </div>

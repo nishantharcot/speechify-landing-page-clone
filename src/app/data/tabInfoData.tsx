@@ -33,7 +33,7 @@ let tabInfoData: TabInfoProps[] = [
         </div>
       </div>
     ),
-    bannerVideo: '/videos/chrome-extension.mp4',
+    bannerVideo: '/platform-videos/chrome-extension.mp4',
   },
   {
     firstText: 'Let Speechify read to you while you commute, exercise, and run errands. Breeze through PDFs, books, articles, emails — anything.',
@@ -54,7 +54,7 @@ let tabInfoData: TabInfoProps[] = [
         </div>
       </div>
     ),
-    bannerVideo: '/videos/iOS.mp4',
+    bannerVideo: '/platform-videos/iOS.mp4',
   },
   {
     firstText: 'Let Speechify read to you while you walk to work, go for a run, or do laundry. Get through PDFs, books, articles, docs & emails twice as fast.',
@@ -70,18 +70,18 @@ let tabInfoData: TabInfoProps[] = [
         </div>
       </div>
     ),
-    bannerVideo: '/videos/android.mp4',
+    bannerVideo: '/platform-videos/android.mp4',
   },
   {
     firstText: 'The fastest way to read any PDF, book, or doc and make it stick. Integrates with Google Drive, Dropbox, Canvas & more.',
     buttonText: 'Try for free',
-    bannerVideo: '/videos/web.mp4',
+    bannerVideo: '/platform-videos/web.mp4',
   },
   {
     firstText: 'Use Speechify from your Dock to read PDFs, Word docs, emails & more. Listen and read at the same time to read faster and retain more.',
     buttonIcon: <AppleIcon />,
     buttonText: 'Download on App Store',
-    bannerVideo: '/videos/mac.mp4',
+    bannerVideo: '/platform-videos/mac.mp4',
   },
 ];
 

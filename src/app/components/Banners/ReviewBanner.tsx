@@ -67,9 +67,9 @@ export default function ReviewBanner() {
 
   return (
     <section className="bg-black pt-12 text-white">
-      <div className="flex w-full flex-col content-center justify-center gap-y-4 text-center">
-        <div className="text-6xl">OUR LISTENERS LOVE US</div>
-        <div className="text-2xl">Over 250k people have given Speechify 5 stars</div>
+      <div className="flex w-full flex-col content-center px-6 justify-center gap-y-4 text-center">
+        <div className="text-2xl md:text-6xl">OUR LISTENERS LOVE US</div>
+        <div className="text-xl md:text-2xl">Over 250k people have given Speechify 5 stars</div>
         <div className="text-xl text-slate-400">
           Read more reviews <CallMadeIcon />
         </div>
@@ -78,7 +78,7 @@ export default function ReviewBanner() {
       <div className="mt-12 grid grid-cols-12 gap-x-4 gap-y-4 px-6 py-12">
         {reviewData.map((data, index) => {
           return (
-            <div className="col-span-12 overflow-hidden rounded-lg bg-gray-900 text-slate-500 shadow-md shadow-gray-900 sm:col-span-6 md:col-span-3">
+            <div key={index} className="col-span-12 overflow-hidden rounded-lg bg-gray-900 text-slate-500 shadow-md shadow-gray-900 sm:col-span-6 md:col-span-3">
               <div className="p-6">
                 {data.photo ? (
                   <h3 className="mb-4 text-xl font-medium text-slate-700">

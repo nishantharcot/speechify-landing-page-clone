@@ -13,7 +13,7 @@ const PersonCard = (person: PersonCardProps) => {
     <div className="flex flex-col overflow-hidden text-center text-inherit shadow-slate-200">
       {/*  <!-- Icon --> */}
       <div className="flex justify-center">
-        <Image src={person.photo} alt="personImage" width="80" height="80" />
+        <Image src={person.photo} alt="personImage" width="150" height="150" />
       </div>
       {/*  <!-- Body--> */}
       <div className="pb-2 pt-4">

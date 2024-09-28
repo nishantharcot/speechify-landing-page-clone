@@ -48,10 +48,10 @@ const TryItYourselfBanner = () => {
       photo: '/person-logos/Beast.png',
     },
     {
-      name: 'Snoop',
-      title: 'Music Icon',
-      verified: true,
-      photo: '/person-logos/Snoop.png',
+      name: 'Sign In',
+      title: 'To explore',
+      verified: false,
+      photo: '/person-logos/sign-in.svg',
     },
   ];
 
@@ -103,10 +103,10 @@ const TryItYourselfBanner = () => {
               </div>
             </div>
 
-            <div className="grid grid-cols-2 md:grid-cols-4 mt-6 md:mt-0 justify-center">
+            <div className="grid grid-cols-2 gap-6 md:grid-cols-4 mt-6 md:mt-0 justify-center">
                   {personsData.map((data, i) => {
                     return (
-                      <div className="" key={i}>
+                      <div key={i}>
                         <PersonCard {...data} />
                       </div>
                     );
