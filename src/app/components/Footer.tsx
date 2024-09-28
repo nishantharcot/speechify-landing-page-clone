@@ -9,7 +9,6 @@ import Apple from '@mui/icons-material/Apple';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import Image from 'next/image';
 import LanguageIcon from '@mui/icons-material/Language';
-import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 type FooterProps = {

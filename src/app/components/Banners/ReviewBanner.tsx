@@ -1,9 +1,5 @@
 import React from 'react';
 import TryForFreeButton from '../Buttons/TryForFreeButton';
-import PersonCard from '../PersonCard';
-import AppleIcon from '@mui/icons-material/Apple';
-import LanguageIcon from '@mui/icons-material/Language';
-import { CheckCircleIcon } from 'lucide-react';
 import CallMadeIcon from '@mui/icons-material/CallMade';
 import Image from 'next/image';
 import StarIcon from '@mui/icons-material/Star';

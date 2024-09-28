@@ -1,7 +1,3 @@
-import countryList from '../../data/countryListData';
-import CountryOptionCard from '../CountryOptionCard';
-import PersonCard from '../PersonCard';
-import TabsWithIcon from '../Tabs/TabsWithIcon';
 import TryForFreeButton from '../Buttons/TryForFreeButton';
 
 const ListenToAnythingBanner = () => {

@@ -1,8 +1,3 @@
-import countryList from '../../data/countryListData';
-import CountryOptionCard from '../CountryOptionCard';
-import PersonCard from '../PersonCard';
-import TabsWithIcon from '../Tabs/TabsWithIcon';
-import TryForFreeButton from '../Buttons/TryForFreeButton';
 import Image from 'next/image';
 import PlayCircleIcon from '@mui/icons-material/PlayCircle';
 

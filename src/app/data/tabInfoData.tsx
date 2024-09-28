@@ -3,7 +3,6 @@ import GoogleIcon from '@mui/icons-material/Google';
 import AppleIcon from '@mui/icons-material/Apple';
 import StarIcon from '@mui/icons-material/Star';
 import Android from '@mui/icons-material/Android';
-import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 
 type TabInfoProps = {
   firstText: string;

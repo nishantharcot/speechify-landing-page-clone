@@ -1,4 +1,3 @@
-import { ReactElement } from 'react';
 import GoogleIcon from '@mui/icons-material/Google';
 import StarIcon from '@mui/icons-material/Star';
 import { TabInfoProps } from '../../data/tabInfoData';
