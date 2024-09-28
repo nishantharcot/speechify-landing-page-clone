@@ -9,46 +9,46 @@ import DesktopMacIcon from '@mui/icons-material/DesktopMac';
 import TabInfo from './TabInfo';
 import tabInfoData from '../../data/tabInfoData';
 
-
 export default function TabsWithIcon() {
   const data = [
     {
       label: 'Chrome Extension',
       value: 'chrome',
       icon: <GoogleIcon />,
-      desc: <TabInfo {...tabInfoData[0]}/>
+      desc: <TabInfo {...tabInfoData[0]} />,
     },
     {
       label: 'iOS',
       value: 'profile',
       icon: <AppleIcon />,
-      desc: <TabInfo {...tabInfoData[1]} />
+      desc: <TabInfo {...tabInfoData[1]} />,
     },
     {
       label: 'Android',
       value: 'android',
       icon: <AndroidIcon />,
-      desc: <TabInfo {...tabInfoData[2]} />
+      desc: <TabInfo {...tabInfoData[2]} />,
     },
     {
       label: 'Web App',
       value: 'web-app',
       icon: <LanguageIcon />,
-      desc: <TabInfo {...tabInfoData[3]} />
+      desc: <TabInfo {...tabInfoData[3]} />,
     },
     {
       label: 'Mac App',
       value: 'mac-app',
       icon: <DesktopMacIcon />,
-      desc: <TabInfo {...tabInfoData[4]} />
+      desc: <TabInfo {...tabInfoData[4]} />,
     },
   ];
   return (
-    <Tabs value="chrome" className="bg-black text-white overflow-scroll">
-      <TabsHeader indicatorProps={{
-          className:
-            "bg-transparent border-b-2 border-salte-400 shadow-none rounded-none",
-        }}>
+    <Tabs value="chrome" className="overflow-scroll bg-black text-white">
+      <TabsHeader
+        indicatorProps={{
+          className: 'bg-transparent border-b-2 border-salte-400 shadow-none rounded-none',
+        }}
+      >
         {data.map(({ label, value, icon }) => (
           <Tab key={value} value={value}>
             <div className="flex items-center gap-2">

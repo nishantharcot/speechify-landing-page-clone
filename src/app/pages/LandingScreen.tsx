@@ -13,7 +13,7 @@ import ReviewBanner from '../components/Banners/ReviewBanner';
 
 const LandingScreen = () => {
   return (
-    <div className='bg-black space-y-12'>
+    <div className="space-y-12 bg-black">
       <NavbarSimple />
       <MainBanner />
       <TryItYourselfBanner />

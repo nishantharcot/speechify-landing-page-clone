@@ -8,7 +8,6 @@ import CallMadeIcon from '@mui/icons-material/CallMade';
 import Image from 'next/image';
 import StarIcon from '@mui/icons-material/Star';
 
-
 export default function ReviewBanner() {
   const reviewData = [
     {
@@ -67,7 +66,7 @@ export default function ReviewBanner() {
 
   return (
     <section className="bg-black pt-12 text-white">
-      <div className="flex w-full flex-col content-center px-6 justify-center gap-y-4 text-center">
+      <div className="flex w-full flex-col content-center justify-center gap-y-4 px-6 text-center">
         <div className="text-2xl md:text-6xl">OUR LISTENERS LOVE US</div>
         <div className="text-xl md:text-2xl">Over 250k people have given Speechify 5 stars</div>
         <div className="text-xl text-slate-400">
@@ -78,7 +77,10 @@ export default function ReviewBanner() {
       <div className="mt-12 grid grid-cols-12 gap-x-4 gap-y-4 px-6 py-12">
         {reviewData.map((data, index) => {
           return (
-            <div key={index} className="col-span-12 overflow-hidden rounded-lg bg-gray-900 text-slate-500 shadow-md shadow-gray-900 sm:col-span-6 md:col-span-3">
+            <div
+              key={index}
+              className="col-span-12 overflow-hidden rounded-lg bg-gray-900 text-slate-500 shadow-md shadow-gray-900 sm:col-span-6 md:col-span-3"
+            >
               <div className="p-6">
                 {data.photo ? (
                   <h3 className="mb-4 text-xl font-medium text-slate-700">
@@ -102,16 +104,14 @@ export default function ReviewBanner() {
         })}
       </div>
 
-      <div className="flex w-full flex-col md:flex-row content-center justify-center gap-y-4 gap-x-4 text-center">
-        <span className='px-6 w-full md:w-auto'>
+      <div className="flex w-full flex-col content-center justify-center gap-x-4 gap-y-4 text-center md:flex-row">
+        <span className="w-full px-6 md:w-auto">
           <TryForFreeButton />
         </span>
-        <div className="text-slate-400 flex flex-wrap text-center justify-center content-center">
+        <div className="flex flex-wrap content-center justify-center text-center text-slate-400">
           Read reviews <CallMadeIcon />
         </div>
       </div>
-
-
     </section>
   );
 }

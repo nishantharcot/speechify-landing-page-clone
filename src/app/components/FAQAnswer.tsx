@@ -5,16 +5,14 @@ type FAQAnswerProps = {
   ans: string;
 };
 
-const FAQAnswer = ({ans}: FAQAnswerProps) => {
+const FAQAnswer = ({ ans }: FAQAnswerProps) => {
   return (
-    <div className='flex flex-col gap-y-8'>
-        <div>
-            {ans}
-        </div>
-        <span className='mt-4'>
-          <TrySpeechifyForFreeButton />
-        </span>
-      </div>
+    <div className="flex flex-col gap-y-8">
+      <div>{ans}</div>
+      <span className="mt-4">
+        <TrySpeechifyForFreeButton />
+      </span>
+    </div>
   );
 };
 
