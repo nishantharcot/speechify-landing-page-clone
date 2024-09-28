@@ -9,6 +9,7 @@ import ScanAndListenBanner from '../components/Banners/ScanAndListenBanner';
 import FAQBanner from '../components/Banners/FAQBanner';
 import CEOBanner from '../components/Banners/CEOBanner';
 import Footer from '../components/Footer';
+import ReviewBanner from '../components/Banners/ReviewBanner';
 
 const LandingScreen = () => {
   return (
@@ -21,6 +22,7 @@ const LandingScreen = () => {
       <ListenToAnythingBanner />
       <FeaturesBanner />
       <ScanAndListenBanner />
+      <ReviewBanner />
       <CEOBanner />
       <FAQBanner />
       <Footer />

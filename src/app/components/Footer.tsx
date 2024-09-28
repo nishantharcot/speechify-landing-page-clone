@@ -84,7 +84,7 @@ const Footer = () => {
       <div className="grid grid-cols-12 px-6 gap-y-4 gap-x-2">
         {footerData.map((data, index) => {
           return (
-            <div className="flex flex-col col-span-6 sm:col-span-3 gap-y-2 text-white" key={index}>
+            <div className="flex flex-col col-span-6 sm:col-span-3 md:col-span-2 gap-y-2 text-white" key={index}>
               {data.title != '' ? <div className="pb-4 text-slate-400">{data.title}</div> : null}
               {data.children.map((child, index2) => {
                 return <div key={index2}>{child}</div>;
@@ -93,7 +93,7 @@ const Footer = () => {
           );
         })}
 
-        <div className="col-span-12 flex flex-col gap-y-2 text-white sm:col-span-6">
+        <div className="col-span-12 flex flex-col gap-y-2 text-white sm:col-span-6 md:col-span-2">
           <div className="hidden pb-4 text-slate-400 sm:block">Follow Speechify</div>
           <div className='hidden sm:block'>
             <div className="flex gap-x-6">
@@ -117,7 +117,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="col-span-12 flex flex-col gap-y-2 text-white sm:col-span-6 mb-4">
+        <div className="col-span-12 flex flex-col gap-y-2 text-white sm:col-span-6 md:col-span-2 mb-4">
           <div className="hidden pb-4 text-slate-400 sm:block">
             Get the App
           </div>
