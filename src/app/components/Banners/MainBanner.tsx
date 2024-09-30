@@ -4,6 +4,7 @@ import PersonCard from '../PersonCard';
 import AppleIcon from '@mui/icons-material/Apple';
 import LanguageIcon from '@mui/icons-material/Language';
 import { CheckCircleIcon } from 'lucide-react';
+import Image from 'next/image';
 
 export default function MainBanner() {
   const personsData = [
@@ -49,23 +50,97 @@ export default function MainBanner() {
             <div className="flex flex-col flex-wrap md:flex-row md:justify-between">
               <div className="mt-4 flex flex-col items-center justify-end md:mt-0">
                 <div className="flex flex-col gap-y-4">
-                  <div className="flex flex-col items-center md:flex-row">
-                    <p>
-                      <AppleIcon />
-                      App of the Day
-                    </p>
-                    <p className="md:pl-4">
-                      <LanguageIcon />
-                      Chrome Extension of The Year
-                    </p>
+                  <div className="flex flex-col items-center gap-x-4 md:flex-row">
+                    <div className="flex content-center gap-x-2">
+                      <div>
+                        <Image
+                          src="award-photos/award-wing-left.svg"
+                          alt="award-wing-left"
+                          width={15}
+                          height={15}
+                        />
+                      </div>
+                      <div className="flex flex-wrap content-center">
+                        <AppleIcon />
+                      </div>
+                      <div className="flex flex-wrap content-center">App of the Day</div>
+                      <div>
+                        <Image
+                          src="award-photos/award-wing-right.svg"
+                          alt="award-wing-right"
+                          width={15}
+                          height={15}
+                        />
+                      </div>
+                    </div>
+                    <div className="flex content-center gap-x-2">
+                      <div>
+                        <Image
+                          src="award-photos/award-wing-left.svg"
+                          alt="award-wing-left"
+                          width={15}
+                          height={15}
+                        />
+                      </div>
+                      <div className="flex flex-wrap content-center">
+                        <LanguageIcon />
+                      </div>
+                      <div className="flex flex-wrap content-center">
+                        Chrome Extension of The Year
+                      </div>
+                      <div>
+                        <Image
+                          src="award-photos/award-wing-right.svg"
+                          alt="award-wing-right"
+                          width={15}
+                          height={15}
+                        />
+                      </div>
+                    </div>
                   </div>
-                  <div className="flex flex-col items-center md:flex-row">
-                    <p>250k+ 5-star reviews</p>
-                    <p className="md:pl-4">30M+ Users</p>
+                  <div className="flex flex-col items-center gap-x-4 md:flex-row">
+                    <div className="flex content-center gap-x-2">
+                      <div>
+                        <Image
+                          src="award-photos/award-wing-left.svg"
+                          alt="award-wing-left"
+                          width={15}
+                          height={15}
+                        />
+                      </div>
+                      <div className="flex flex-wrap content-center">250k+ 5-star reviews</div>
+                      <div>
+                        <Image
+                          src="award-photos/award-wing-right.svg"
+                          alt="award-wing-right"
+                          width={15}
+                          height={15}
+                        />
+                      </div>
+                    </div>
+                    <div className="flex content-center gap-x-2">
+                      <div>
+                        <Image
+                          src="award-photos/award-wing-left.svg"
+                          alt="award-wing-left"
+                          width={15}
+                          height={15}
+                        />
+                      </div>
+                      <div className="flex flex-wrap content-center">30M+ Users</div>
+                      <div>
+                        <Image
+                          src="award-photos/award-wing-right.svg"
+                          alt="award-wing-right"
+                          width={15}
+                          height={15}
+                        />
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div className="order-first flex flex-col md:order-last">
+              <div className="order-first flex flex-col gap-y-4 md:order-last">
                 <div className="order-last mt-6 flex justify-center text-slate-500 md:order-first md:mt-0 md:justify-end">
                   <CheckCircleIcon fontSize="small" />
                   <span className="pl-1">Official Speechify partnership</span>

@@ -52,7 +52,7 @@ export default function LandingScreenLayout() {
   );
 
   return (
-    <div className="w-[calc(100%+48px)]">
+    <div className="w-full">
       <Navbar className="sticky top-0 z-10 h-max max-w-full rounded-none bg-black px-4 py-2 lg:px-8 lg:py-4">
         <div className="text-blue-gray-900 flex items-center justify-between p-6">
           <Typography as="a" href="#" className="mr-4 cursor-pointer py-1.5 font-medium">
