@@ -54,7 +54,7 @@ export default function LandingScreenLayout() {
     <div className="mx-auto w-full px-4 lg:max-w-[1600px]">
       <div>
         <StickyNavbar />
-        <div className="space-y-12 bg-black pt-12">
+        <div className="space-y-6 bg-black pt-12">
           <MainBanner />
           <TryItYourselfBanner />
           <FeaturedInBanner />

@@ -80,7 +80,13 @@ export default function ReviewBanner() {
               <div className="p-6">
                 {data.photo ? (
                   <h3 className="mb-4 text-xl font-medium text-slate-700">
-                    <Image src={data.photo} alt="Richard-Branson" width={120} height={120} />
+                    <Image
+                      className="rounded-full"
+                      src={data.photo}
+                      alt={data.personData}
+                      width={120}
+                      height={120}
+                    />
                   </h3>
                 ) : null}
                 <h3 className="mb-4 text-xl font-medium text-white">

@@ -65,7 +65,7 @@ const TryItYourselfBanner = () => {
   return (
     <section className="bg-black py-12">
       <div className="px-6 text-white">
-        <div className="text-5xl">Try it Yourself</div>
+        <div className="border-white/20 pt-12 text-5xl md:border-t">Try it Yourself</div>
         <div className="mt-6 rounded-lg bg-white p-6 text-black">
           <div className="my-4 flex flex-col items-center gap-x-4 md:flex-row">
             <div>Generate text in</div>
