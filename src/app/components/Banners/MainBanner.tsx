@@ -5,6 +5,7 @@ import AppleIcon from '@mui/icons-material/Apple';
 import LanguageIcon from '@mui/icons-material/Language';
 import { CheckCircleIcon } from 'lucide-react';
 import Image from 'next/image';
+import TickIcon from '../Icons/TickIcon';
 
 export default function MainBanner() {
   const personsData = [
@@ -13,24 +14,28 @@ export default function MainBanner() {
       title: 'Speechify Founder',
       verified: true,
       photo: '/person-logos/Cliff.png',
+      showPlay: true,
     },
     {
       name: 'Gwyneth',
       title: 'Actress',
       verified: true,
       photo: '/person-logos/Gwyneth.png',
+      showPlay: true,
     },
     {
       name: 'Beast',
       title: 'Youtuber',
       verified: true,
       photo: '/person-logos/Beast.png',
+      showPlay: true,
     },
     {
       name: 'Snoop',
       title: 'Music Icon',
       verified: true,
       photo: '/person-logos/Snoop.png',
+      showPlay: true,
     },
   ];
 
@@ -47,10 +52,10 @@ export default function MainBanner() {
             </span>
           </div>
           <div className="py-12">
-            <div className="flex flex-col flex-wrap md:flex-row md:justify-between">
-              <div className="mt-4 flex flex-col items-center justify-end md:mt-0">
-                <div className="flex flex-col gap-y-4">
-                  <div className="flex flex-col items-center gap-x-4 md:flex-row">
+            <div className="flex flex-col flex-wrap gap-y-4 sm:flex-row sm:justify-center md:justify-between">
+              <div className="mt-4 flex flex-col justify-end sm:mt-0 sm:items-center">
+                <div className="flex flex-col gap-y-4 text-nowrap">
+                  <div className="flex flex-col items-center gap-x-4 sm:flex-row sm:justify-center md:justify-start">
                     <div className="flex content-center gap-x-2">
                       <div>
                         <Image
@@ -98,7 +103,7 @@ export default function MainBanner() {
                       </div>
                     </div>
                   </div>
-                  <div className="flex flex-col items-center gap-x-4 md:flex-row">
+                  <div className="flex flex-col items-center gap-x-4 sm:flex-row sm:justify-center md:justify-start">
                     <div className="flex content-center gap-x-2">
                       <div>
                         <Image
@@ -142,10 +147,10 @@ export default function MainBanner() {
               </div>
               <div className="order-first flex flex-col gap-y-4 md:order-last">
                 <div className="order-last mt-6 flex justify-center text-slate-500 md:order-first md:mt-0 md:justify-end">
-                  <CheckCircleIcon fontSize="small" />
-                  <span className="pl-1">Official Speechify partnership</span>
+                  <TickIcon />
+                  <span className="pl-2">Official Speechify partnership</span>
                 </div>
-                <div className="flex flex-wrap justify-center gap-x-4">
+                <div className="flex flex-wrap justify-center gap-x-2 sm:gap-x-6">
                   {personsData.map((data, i) => {
                     return (
                       <div className="" key={i}>
