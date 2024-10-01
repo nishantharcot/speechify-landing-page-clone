@@ -47,14 +47,33 @@ export default function TabsWithIcon() {
         indicatorProps={{
           className: 'bg-transparent border-b-2 border-salte-400 shadow-none rounded-none',
         }}
+        className="border-salte-400 flex flex-wrap gap-2 rounded-none border-t-2 bg-transparent"
       >
         {data.map(({ label, value, icon }) => (
-          <Tab key={value} value={value}>
-            <div className="flex items-center gap-2">
-              {icon}
-              {label}
+          <div>
+            <div className="hidden md:block">
+              <Tab
+                activeClassName="bg-[#171717] border-2 border-[#808080] rounded-lg"
+                key={value}
+                value={value}
+              >
+                <div className="flex items-center gap-2">
+                  {icon}
+                  {label}
+                </div>
+              </Tab>
             </div>
-          </Tab>
+            <div className="md:hidden">
+              <Tab activeClassName="rounded-lg border-2 border-[#808080]" key={value} value={value}>
+                <button className="rounded-lg bg-[#171717] p-2">
+                  <div className="flex items-center gap-2">
+                    {icon}
+                    {label}
+                  </div>
+                </button>
+              </Tab>
+            </div>
+          </div>
         ))}
       </TabsHeader>
       <TabsBody>

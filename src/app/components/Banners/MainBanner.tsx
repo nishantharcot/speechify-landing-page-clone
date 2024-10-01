@@ -45,9 +45,10 @@ export default function MainBanner() {
           <div className="flex flex-col">
             <div className="text-5xl">CUT YOUR READING TIME IN HALF.</div>
             <div className="text-5xl">LET SPEECHIFY READ TO YOU.</div>
-
             <span className="mt-6">
-              <TryForFreeButton />
+              <button className="rounded-2xl bg-white px-10 py-4 font-ABCDiatype text-lg text-black">
+                Try For Free
+              </button>
             </span>
           </div>
           <div className="py-12">
