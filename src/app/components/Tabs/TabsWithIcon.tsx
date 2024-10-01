@@ -57,7 +57,7 @@ export default function TabsWithIcon() {
                 key={value}
                 value={value}
               >
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-2 hover:text-[#808080]">
                   {icon}
                   {label}
                 </div>
