@@ -3,6 +3,7 @@ import GoogleIcon from '@mui/icons-material/Google';
 import AppleIcon from '@mui/icons-material/Apple';
 import StarIcon from '@mui/icons-material/Star';
 import Android from '@mui/icons-material/Android';
+import Image from 'next/image';
 
 type TabInfoProps = {
   firstText: string;
@@ -19,17 +20,52 @@ const tabInfoData: TabInfoProps[] = [
     buttonIcon: <GoogleIcon />,
     buttonText: 'Add to Chrome',
     comments: (
-      <div className="flex flex-row gap-x-6 md:flex-row">
-        <div className="flex flex-col">
-          <div>Favourite App of 2023</div>
-          <div>by Google Chrome</div>
-        </div>
-        <div className="flex flex-col">
+      <div className="flex flex-col content-center justify-center gap-x-6 gap-y-2 md:flex-row md:justify-start">
+        <div className="flex flex-row justify-center gap-x-2 md:flex-row">
           <div>
-            <StarIcon />
-            <span className="pl-2">4.5</span>
+            <Image
+              src="award-photos/award-wing-left.svg"
+              alt="award-wing-left"
+              width={20}
+              height={20}
+            />
           </div>
-          <div>12.5k ratings</div>
+          <div className="flex flex-col flex-wrap justify-center text-center">
+            <div>Favourite App of 2023</div>
+            <div className="text-slate-500">by Google Chrome</div>
+          </div>
+          <div>
+            <Image
+              src="award-photos/award-wing-right.svg"
+              alt="award-wing-right"
+              width={20}
+              height={20}
+            />
+          </div>
+        </div>
+        <div className="flex flex-row justify-center gap-x-2 md:flex-row">
+          <div>
+            <Image
+              src="award-photos/award-wing-left.svg"
+              alt="award-wing-left"
+              width={20}
+              height={20}
+            />
+          </div>
+          <div className="flex flex-col flex-wrap justify-center text-center">
+            <div>
+              <StarIcon /> 4.5
+            </div>
+            <div className="text-slate-500">12.5k ratings</div>
+          </div>
+          <div>
+            <Image
+              src="award-photos/award-wing-right.svg"
+              alt="award-wing-right"
+              width={20}
+              height={20}
+            />
+          </div>
         </div>
       </div>
     ),
@@ -41,17 +77,52 @@ const tabInfoData: TabInfoProps[] = [
     buttonIcon: <AppleIcon />,
     buttonText: 'Download on App Store',
     comments: (
-      <div className="flex flex-row gap-x-6 md:flex-row">
-        <div className="flex flex-col">
-          <div>App of the Day</div>
-          <div>in App Store</div>
-        </div>
-        <div className="flex flex-col">
+      <div className="flex flex-col content-center justify-center gap-x-6 gap-y-2 md:flex-row md:justify-start">
+        <div className="flex flex-row justify-center gap-x-2 md:flex-row">
           <div>
-            <StarIcon />
-            <span className="pl-2">4.7</span>
+            <Image
+              src="award-photos/award-wing-left.svg"
+              alt="award-wing-left"
+              width={20}
+              height={20}
+            />
           </div>
-          <div>192k ratings</div>
+          <div className="flex flex-col flex-wrap justify-center text-center">
+            <div>App of the day</div>
+            <div className="text-slate-500">App Store</div>
+          </div>
+          <div>
+            <Image
+              src="award-photos/award-wing-right.svg"
+              alt="award-wing-right"
+              width={20}
+              height={20}
+            />
+          </div>
+        </div>
+        <div className="flex flex-row justify-center gap-x-2 md:flex-row">
+          <div>
+            <Image
+              src="award-photos/award-wing-left.svg"
+              alt="award-wing-left"
+              width={20}
+              height={20}
+            />
+          </div>
+          <div className="flex flex-col flex-wrap justify-center text-center">
+            <div>
+              <StarIcon /> 4.7
+            </div>
+            <div className="text-slate-500">192k ratings</div>
+          </div>
+          <div>
+            <Image
+              src="award-photos/award-wing-right.svg"
+              alt="award-wing-right"
+              width={20}
+              height={20}
+            />
+          </div>
         </div>
       </div>
     ),
@@ -63,12 +134,30 @@ const tabInfoData: TabInfoProps[] = [
     buttonIcon: <Android />,
     buttonText: 'Get it on Google Play',
     comments: (
-      <div className="flex flex-row gap-x-6 md:flex-row">
-        <div className="flex flex-col">
+      <div className="flex flex-col content-center justify-center gap-x-6 gap-y-2 md:flex-row md:justify-start">
+        <div className="flex flex-row justify-center gap-x-2 md:flex-row">
           <div>
-            <span className="pl-2">4.4</span>
+            <Image
+              src="award-photos/award-wing-left.svg"
+              alt="award-wing-left"
+              width={20}
+              height={20}
+            />
           </div>
-          <div>120k ratings</div>
+          <div className="flex flex-col flex-wrap justify-center text-center">
+            <div>
+              <StarIcon /> 4.4
+            </div>
+            <div className="text-slate-500">120k ratings</div>
+          </div>
+          <div>
+            <Image
+              src="award-photos/award-wing-right.svg"
+              alt="award-wing-right"
+              width={20}
+              height={20}
+            />
+          </div>
         </div>
       </div>
     ),

@@ -3,7 +3,6 @@ import TryForFreeButton from '../Buttons/TryForFreeButton';
 import PersonCard from '../PersonCard';
 import AppleIcon from '@mui/icons-material/Apple';
 import LanguageIcon from '@mui/icons-material/Language';
-import { CheckCircleIcon } from 'lucide-react';
 import Image from 'next/image';
 import TickIcon from '../Icons/TickIcon';
 

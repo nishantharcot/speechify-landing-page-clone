@@ -1,18 +1,27 @@
-import Image from 'next/image';
+import NytLogo from '../Logos/NytLogo';
+import CbsLogo from '../Logos/CbsLogo';
+import ForbesLogo from '../Logos/ForbesLogo';
+import TimeLogo from '../Logos/TimeLogo';
+import WallStLogo from '../Logos/WallStLogo';
 
 const FeaturedInBanner = () => {
-  const featuredInPublications = ['cbs.svg', 'forbes.svg', 'nyt.svg', 'time.svg', 'wall-st.svg'];
+  const featuredInPublications = [
+    <ForbesLogo className="h-[30px] fill-white" />,
+    <CbsLogo className="h-[30px] fill-white" />,
+    <TimeLogo className="h-[30px] fill-white" />,
+    <NytLogo className="h-[30px] fill-white" />,
+    <WallStLogo className="h-[30px] fill-white" />,
+  ];
 
   return (
     <section className="bg-black text-white">
-      <div className="flex min-h-[50vh] flex-col items-center justify-center">
+      <div className="flex min-h-[50vh] flex-col items-center justify-center gap-14">
         <div className="text-2xl text-slate-500">Featured In</div>
-
-        <div className="mt-12 grid grid-cols-2 place-content-center gap-12 md:grid-cols-5">
+        <div className="flex w-full flex-wrap items-center justify-center gap-x-9 gap-y-10">
           {featuredInPublications.map((data, index) => {
             return (
               <div key={index} className="flex justify-center text-white">
-                <Image src={`featured-logos/` + data} alt={data} width={150} height={150} />
+                {data}
               </div>
             );
           })}

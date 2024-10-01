@@ -12,15 +12,19 @@ type PersonCardProps = {
   hoverColor?: string;
   height?: number;
   width?: number;
+  additonalClasses?: string[];
 };
 const PersonCard = (person: PersonCardProps) => {
+  const baseClasses = `rounded-full bg-[${person.backgroundColor}] hover:bg-${person.hoverColor}`;
+  const additionalClasses = person.additonalClasses?.join(' ');
+
   return (
     <div className="relative flex flex-col justify-center gap-y-4 text-center text-inherit">
       {/*  <!-- Icon --> */}
       <div>
-        <div className="flex h-full justify-center text-center">
+        <div className="z-[-1] flex h-full justify-center text-center">
           <Image
-            className={`rounded-full bg-[${person.backgroundColor}] hover:bg-${person.hoverColor}`} // 1e1a38
+            className={baseClasses + ' ' + additionalClasses}
             src={person.photo}
             alt="personImage"
             width={person.width ? person.width : 150}
@@ -32,13 +36,12 @@ const PersonCard = (person: PersonCardProps) => {
       <div>
         <h3 className="flex content-center justify-center px-4 font-medium">
           <span className="pr-1">{person.name}</span>
-          {/* {person.verified ? <CheckCircleIcon fontSize="small" /> : null} */}
           {person.verified ? <TickIcon /> : null}
         </h3>
         <p className="text-slate-500">{person.title}</p>
       </div>
       {person.showPlay && (
-        <div className="absolute right-[-5px] top-[100px] z-[9999]">
+        <div className="absolute right-[-5px] top-[100px] z-[9999] rounded-full">
           <PlayCircleIcon style={{ width: 48, height: 48 }} />
         </div>
       )}

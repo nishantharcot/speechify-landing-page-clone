@@ -20,7 +20,13 @@ const CEOBanner = () => {
               to be. So, I taught myself to code and created Speechify to read books to me. <br />{' '}
               <br /> Today, Speechify helps over 30 million people read 2x faster, remember more &
               save time <br /> <br />
-              <Image src="/cliff-signature.webp" alt="Cliff-Photo" width={300} height={300} />
+              <Image
+                className="ml-[-68px] mt-[30px]"
+                src="/cliff-signature.webp"
+                alt="Cliff-Photo"
+                width={300}
+                height={300}
+              />
             </div>
           </div>
         </div>
