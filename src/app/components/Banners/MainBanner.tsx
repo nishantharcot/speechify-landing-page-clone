@@ -154,7 +154,7 @@ export default function MainBanner() {
                   {personsData.map((data, i) => {
                     return (
                       <div className="" key={i}>
-                        <PersonCard backgroundColor="#242424" {...data} />
+                        <PersonCard hoverColor="blue-700" backgroundColor="#242424" {...data} />
                       </div>
                     );
                   })}
