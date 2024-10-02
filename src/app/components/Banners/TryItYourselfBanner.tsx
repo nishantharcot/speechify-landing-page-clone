@@ -47,7 +47,7 @@ const TryItYourselfBanner = () => {
       name: 'Benajamin',
       title: 'Narrator',
       verified: false,
-      photo: '/person-logos/Benajmin.webp',
+      photo: '/person-logos/Benajmin.png',
       showPlay: false,
     },
     {
