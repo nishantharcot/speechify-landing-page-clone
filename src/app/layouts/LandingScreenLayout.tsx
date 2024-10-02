@@ -1,5 +1,4 @@
 import React from 'react';
-import { Typography } from '@material-tailwind/react';
 import MainBanner from '../components/Banners/MainBanner';
 import TryItYourselfBanner from '../components/Banners/TryItYourselfBanner';
 import FeaturedInBanner from '../components/Banners/FeaturedInBanner';
