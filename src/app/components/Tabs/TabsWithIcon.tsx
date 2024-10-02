@@ -47,7 +47,7 @@ export default function TabsWithIcon() {
         indicatorProps={{
           className: 'bg-transparent border-b-2 border-salte-400 shadow-none rounded-none',
         }}
-        className="border-salte-400 flex flex-wrap gap-2 rounded-none border-t-2 bg-transparent"
+        className="border-salte-400 flex flex-wrap gap-2 rounded-none bg-transparent md:border-t-2"
       >
         {data.map(({ label, value, icon }, index) => (
           <div key={index}>

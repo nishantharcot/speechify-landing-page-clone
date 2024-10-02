@@ -24,7 +24,7 @@ const PersonCard = (person: PersonCardProps) => {
       <div>
         <div className="z-[-1] flex h-full justify-center text-center">
           <Image
-            className={baseClasses + ' ' + additionalClasses}
+            className={baseClasses + ' ' + (additionalClasses ? additionalClasses : '')}
             src={person.photo}
             alt="personImage"
             width={person.width ? person.width : 150}

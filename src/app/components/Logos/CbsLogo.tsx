@@ -5,7 +5,7 @@ interface LogoProps {
 const CbsLogo = ({ className }: LogoProps) => {
   return (
     <svg viewBox="0 0 100 30" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
-      <g clip-path="url(#clip0_2607_62447)">
+      <g clipPath="url(#clip0_2607_62447)">
         <mask id="mask0_2607_62447" maskUnits="userSpaceOnUse" x="0" y="0" width="100" height="30">
           <path d="M99.2486 0H0.751953V30H99.2486V0Z" fill="white" />
         </mask>

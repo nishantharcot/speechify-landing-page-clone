@@ -78,9 +78,9 @@ const Footer = () => {
   ];
 
   return (
-    <>
+    <div style={{ marginTop: '96px' }}>
       <hr />
-      <div className="grid grid-cols-12 gap-x-2 gap-y-4 px-6">
+      <div className="mt-4 grid grid-cols-12 gap-x-2 gap-y-4 px-6">
         {footerData.map((data, index) => {
           return (
             <div
@@ -189,7 +189,7 @@ const Footer = () => {
           </span>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

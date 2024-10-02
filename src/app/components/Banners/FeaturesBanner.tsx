@@ -24,12 +24,14 @@ const FeaturesBanner = () => {
   ];
 
   return (
-    <section className="bg-black px-6 text-white">
+    <section className="mt-12 inline-block bg-black px-6 text-white">
       <div className="grid w-full grid-cols-1 gap-6 md:grid-cols-3">
         {features.map((data, index) => {
           return (
             <div key={index} className="flex flex-col gap-6">
-              <hr />
+              <div className="hidden md:block">
+                <hr />
+              </div>
               <div className="text-2xl">{data.heading}</div>
               <div className="text-xl">{data.text}</div>
               <div className="mt-8">

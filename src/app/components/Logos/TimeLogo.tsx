@@ -5,7 +5,7 @@ interface LogoProps {
 const TimeLogo = ({ className }: LogoProps) => {
   return (
     <svg viewBox="0 0 97 30" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
-      <g clip-path="url(#clip0_2607_62458)">
+      <g clipPath="url(#clip0_2607_62458)">
         <mask id="mask0_2607_62458" maskUnits="userSpaceOnUse" x="0" y="0" width="97" height="30">
           <path d="M96.836 0H0V30H96.836V0Z" />
         </mask>

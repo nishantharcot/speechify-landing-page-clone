@@ -14,12 +14,14 @@ const CEOBanner = () => {
           <div className="flex">
             <PlayCircleIcon fontSize="large" />
             <div className="pl-4">
-              Hi, I'm CliffWeitzman, founder of Speechify. <br /> <br /> I'm also dyslexic. <br />{' '}
-              <br /> Growingup, my dad would readme HarryPotter because I couldn't do it myself. He
-              was my hero. <br /> <br /> But without reading, I couldn't become the person I wanted
-              to be. So, I taught myself to code and created Speechify to read books to me. <br />{' '}
-              <br /> Today, Speechify helps over 30 million people read 2x faster, remember more &
-              save time <br /> <br />
+              <div className="text-5xl leading-[1.4] md:text-xl">
+                Hi, I'm Cliff Weitzman, founder of Speechify.
+              </div>
+              <br /> I'm also dyslexic. <br /> <br /> Growingup, my dad would readme HarryPotter
+              because I couldn't do it myself. He was my hero. <br /> <br /> But without reading, I
+              couldn't become the person I wanted to be. So, I taught myself to code and created
+              Speechify to read books to me. <br /> <br /> Today, Speechify helps over 30 million
+              people read 2x faster, remember more & save time <br /> <br />
               <Image
                 className="ml-[-68px] mt-[30px]"
                 src="/cliff-signature.webp"

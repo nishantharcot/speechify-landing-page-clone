@@ -63,9 +63,9 @@ export default function ReviewBanner() {
   return (
     <section className="bg-black pt-12 text-white">
       <div className="flex w-full flex-col content-center justify-center gap-y-4 px-6 text-center">
-        <div className="text-2xl md:text-6xl">OUR LISTENERS LOVE US</div>
+        <div className="text-6xl">OUR LISTENERS LOVE US</div>
         <div className="text-xl md:text-2xl">Over 250k people have given Speechify 5 stars</div>
-        <div className="text-xl text-slate-400">
+        <div className="text-xl text-white/40">
           Read more reviews <CallMadeIcon />
         </div>
       </div>
@@ -77,7 +77,7 @@ export default function ReviewBanner() {
               key={index}
               className="col-span-12 overflow-hidden rounded-lg bg-gray-900 text-slate-500 shadow-md shadow-gray-900 sm:col-span-6 md:col-span-3"
             >
-              <div className="p-6">
+              <div className={'p-6 ' + (!data.photo ? 'hidden md:block' : '')}>
                 {data.photo ? (
                   <h3 className="mb-4 text-xl font-medium text-slate-700">
                     <Image
