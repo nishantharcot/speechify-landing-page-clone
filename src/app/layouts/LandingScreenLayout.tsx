@@ -14,42 +14,6 @@ import ReviewBanner from '../components/Banners/ReviewBanner';
 import StickyNavbar from '../components/Navbar';
 
 export default function LandingScreenLayout() {
-  const [openNav, setOpenNav] = React.useState(false);
-
-  React.useEffect(() => {
-    window.addEventListener('resize', () => window.innerWidth >= 960 && setOpenNav(false));
-  }, []);
-
-  const navList = (
-    <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
-      <Typography as="li" variant="small" color="blue-gray" className="p-1 font-normal">
-        <a href="#" className="flex items-center">
-          Text to Speech
-        </a>
-      </Typography>
-      <Typography as="li" variant="small" color="blue-gray" className="p-1 font-normal">
-        <a href="#" className="flex items-center">
-          Creators
-        </a>
-      </Typography>
-      <Typography as="li" variant="small" color="blue-gray" className="p-1 font-normal">
-        <a href="#" className="flex items-center">
-          Developers
-        </a>
-      </Typography>
-      <Typography as="li" variant="small" color="blue-gray" className="p-1 font-normal">
-        <a href="#" className="flex items-center">
-          Solutions
-        </a>
-      </Typography>
-      <Typography as="li" variant="small" color="blue-gray" className="p-1 font-normal">
-        <a href="#" className="flex items-center">
-          About
-        </a>
-      </Typography>
-    </ul>
-  );
-
   return (
     <div className="mx-auto w-full px-4 lg:max-w-[1600px]">
       <div>

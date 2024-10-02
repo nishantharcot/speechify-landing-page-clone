@@ -4,12 +4,6 @@ import TryForFreeButton from './Buttons/TryForFreeButton';
 import MenuIcon from '@mui/icons-material/Menu';
 
 export default function StickyNavbar() {
-  const [openNav, setOpenNav] = React.useState(false);
-
-  React.useEffect(() => {
-    window.addEventListener('resize', () => window.innerWidth >= 960 && setOpenNav(false));
-  }, []);
-
   const midNavItems = ['Text to Speech', 'Creators', 'Developers', 'Solutions', 'About'];
 
   return (

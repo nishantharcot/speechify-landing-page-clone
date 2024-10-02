@@ -49,8 +49,8 @@ export default function TabsWithIcon() {
         }}
         className="border-salte-400 flex flex-wrap gap-2 rounded-none border-t-2 bg-transparent"
       >
-        {data.map(({ label, value, icon }) => (
-          <div>
+        {data.map(({ label, value, icon }, index) => (
+          <div key={index}>
             <div className="hidden md:block">
               <Tab
                 activeClassName="bg-[#171717] border-2 border-[#808080] rounded-lg"
