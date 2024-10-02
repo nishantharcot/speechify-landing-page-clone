@@ -38,7 +38,7 @@ const PersonCard = (person: PersonCardProps) => {
         <p className="text-slate-500">{person.title}</p>
       </div>
       {person.showPlay && (
-        <div className="absolute right-[-5px] top-[100px] z-[9999] rounded-full">
+        <div className="absolute right-[-5px] top-[100px] z-[20] rounded-full">
           <PlayCircleIcon style={{ width: 48, height: 48 }} />
         </div>
       )}

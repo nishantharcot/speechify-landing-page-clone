@@ -11,7 +11,7 @@ const FAQBanner = () => {
           return (
             <div className="mx-24 w-full sm:w-[60vw]" key={index}>
               <details className="group py-6 hover:text-slate-700">
-                <summary className="relative cursor-pointer list-none pr-8 text-lg text-white hover:text-slate-700 md:text-2xl">
+                <summary className="relative cursor-pointer list-none pr-8 text-lg text-white md:text-2xl md:hover:text-slate-700">
                   {data.question}
                   <FAQLogo />
                 </summary>

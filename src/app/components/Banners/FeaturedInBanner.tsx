@@ -16,8 +16,8 @@ const FeaturedInBanner = () => {
   return (
     <section className="bg-black text-white">
       <div className="flex min-h-[60vh] flex-col items-center justify-center gap-14">
-        <div className="text-2xl text-[#808080]">Featured In</div>
-        <div className="flex w-full flex-wrap items-center justify-center gap-x-9 gap-y-10">
+        <div className="font-ABCDiatype text-2xl text-[#808080]">Featured In</div>
+        <div className="mt-6 flex flex-wrap items-center justify-around gap-x-9 gap-y-10 md:w-[80vw]">
           {featuredInPublications.map((data, index) => {
             return (
               <div key={index} className="flex justify-center text-white">

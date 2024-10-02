@@ -5,11 +5,11 @@ import XIcon from '@mui/icons-material/X';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import TwitterIcon from '@mui/icons-material/Twitter';
-import Apple from '@mui/icons-material/Apple';
-import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import Image from 'next/image';
 import LanguageIcon from '@mui/icons-material/Language';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import AppStoreBadge from './Logos/AppStoreBadge';
+import PlayStoreDownloadBadge from './Logos/PlayStoreDownloadBadge';
 
 type FooterProps = {
   title: string;
@@ -87,7 +87,9 @@ const Footer = () => {
               className="col-span-6 flex flex-col gap-y-2 text-white sm:col-span-3 md:col-span-2"
               key={index}
             >
-              {data.title != '' ? <div className="pb-4 text-slate-400">{data.title}</div> : null}
+              {data.title != '' ? (
+                <div className="mb-2 text-sm text-[#808080]">{data.title}</div>
+              ) : null}
               {data.children.map((child, index2) => {
                 return <div key={index2}>{child}</div>;
               })}
@@ -96,8 +98,8 @@ const Footer = () => {
         })}
 
         <div className="col-span-12 flex flex-col gap-y-2 text-white sm:col-span-6 md:col-span-2">
-          <div className="hidden pb-4 text-slate-400 sm:block">Follow Speechify</div>
-          <div className="hidden sm:block">
+          <div className="mb-2 hidden text-sm text-[#808080] sm:block">Follow Speechify</div>
+          <div className="hidden space-y-4 sm:block">
             <div className="flex gap-x-6">
               <InstagramIcon />
               <TwitterIcon />
@@ -120,36 +122,20 @@ const Footer = () => {
         </div>
 
         <div className="col-span-12 mb-4 flex flex-col gap-y-2 text-white sm:col-span-6 md:col-span-2">
-          <div className="hidden pb-4 text-slate-400 sm:block">Get the App</div>
+          <div className="mb-2 hidden text-sm text-[#808080] sm:block">Get the App</div>
           <div className="flex gap-x-6">
-            <button className="rounded-6x h-18 inline-flex w-full items-center justify-center gap-2 whitespace-nowrap rounded bg-white px-2 font-medium tracking-wide text-black shadow-md transition duration-300 hover:bg-emerald-600 hover:shadow-sm hover:shadow-emerald-200 focus:bg-emerald-700 focus:shadow-sm focus:shadow-emerald-200 focus-visible:outline-none disabled:cursor-not-allowed disabled:border-emerald-300 disabled:bg-emerald-300 disabled:shadow-none sm:w-auto">
-              <span>
-                <Apple fontSize="large" />
-              </span>
-              <div className="flex flex-col">
-                <span className="text-xs">
-                  Download on the <br />
-                </span>
-                <span>App Store</span>
-              </div>
+            <button className="inline-flex w-full items-center justify-center gap-2 whitespace-nowrap rounded rounded-2xl bg-white p-2 px-2 font-medium tracking-wide text-black shadow-md transition duration-300 hover:bg-emerald-600 hover:shadow-sm hover:shadow-emerald-200 focus:bg-emerald-700 focus:shadow-sm focus:shadow-emerald-200 focus-visible:outline-none disabled:cursor-not-allowed disabled:border-emerald-300 disabled:bg-emerald-300 disabled:shadow-none sm:w-auto">
+              <AppStoreBadge />
             </button>
           </div>
           <div className="flex gap-x-6">
-            <button className="rounded-6x h-18 inline-flex w-full items-center justify-center gap-2 whitespace-nowrap rounded bg-white px-2 font-medium tracking-wide text-black shadow-md transition duration-300 hover:bg-emerald-600 hover:shadow-sm hover:shadow-emerald-200 focus:bg-emerald-700 focus:shadow-sm focus:shadow-emerald-200 focus-visible:outline-none disabled:cursor-not-allowed disabled:border-emerald-300 disabled:bg-emerald-300 disabled:shadow-none sm:w-auto">
-              <span>
-                <PlayArrowIcon fontSize="large" />
-              </span>
-              <div className="flex flex-col">
-                <span className="text-xs">
-                  Get it on <br />
-                </span>
-                <span>Google Play</span>
-              </div>
+            <button className="h-18 inline-flex w-full items-center justify-center gap-2 whitespace-nowrap rounded rounded-2xl bg-white p-2 px-2 font-medium tracking-wide text-black shadow-md transition duration-300 hover:bg-emerald-600 hover:shadow-sm hover:shadow-emerald-200 focus:bg-emerald-700 focus:shadow-sm focus:shadow-emerald-200 focus-visible:outline-none disabled:cursor-not-allowed disabled:border-emerald-300 disabled:bg-emerald-300 disabled:shadow-none sm:w-auto">
+              <PlayStoreDownloadBadge />
             </button>
           </div>
         </div>
 
-        <div className="col-span-12 mb-6 text-3xl text-slate-400">Recommended Reading</div>
+        <div className="col-span-12 mb-6 text-3xl text-[#808080]">Recommended Reading</div>
 
         <div className="col-span-12 flex flex-col gap-y-2 text-white sm:col-span-6">
           {recommendedReadingsPart1.map((data, index) => {

@@ -2,7 +2,7 @@ import { TabInfoProps } from '../../data/tabInfoData';
 
 const TabInfo = (tabInfoData: TabInfoProps) => {
   return (
-    <section className="w-full bg-black px-6 pt-12">
+    <section className="w-full bg-black pt-12">
       <div className="grid grid-cols-1 md:grid-cols-2">
         <div className="min-h-[40vh]">
           <div className="flex h-[100%] flex-col justify-around">
@@ -21,7 +21,7 @@ const TabInfo = (tabInfoData: TabInfoProps) => {
           </div>
         </div>
         <div className="relative left-[calc(-50vw+50%)] order-first w-[100vw] md:static md:order-last md:w-auto">
-          <video controls className="h-full w-full rounded-[32px]">
+          <video autoPlay={true} muted loop className="h-full w-full rounded-[32px]">
             <source src={tabInfoData.bannerVideo} type="video/mp4" />
           </video>
         </div>

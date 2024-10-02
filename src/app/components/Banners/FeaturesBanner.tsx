@@ -35,9 +35,15 @@ const FeaturesBanner = () => {
               <div className="text-2xl">{data.heading}</div>
               <div className="text-xl">{data.text}</div>
               <div className="mt-8">
-                <video controls className="rounded-6 h-full w-full">
-                  <source src={data.video} type="video/mp4" />
-                </video>
+                {index == 2 ? (
+                  <video className="rounded-6 h-full w-full" autoPlay={true} muted loop>
+                    <source src={data.video} type="video/mp4" />
+                  </video>
+                ) : (
+                  <video className="rounded-6 h-full w-full" autoPlay={true} muted>
+                    <source src={data.video} type="video/mp4" />
+                  </video>
+                )}
               </div>
             </div>
           );

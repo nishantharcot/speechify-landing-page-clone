@@ -43,17 +43,13 @@ export default function TabsWithIcon() {
   ];
   return (
     <Tabs value="chrome" className="overflow-scroll bg-black text-white">
-      <TabsHeader
-        indicatorProps={{
-          className: 'bg-transparent border-b-2 border-salte-400 shadow-none rounded-none',
-        }}
-        className="border-salte-400 flex flex-wrap gap-2 rounded-none bg-transparent md:border-t-2"
-      >
+      <TabsHeader className="flex flex-wrap gap-2 rounded-none border-[#808080] bg-transparent">
         {data.map(({ label, value, icon }, index) => (
           <div key={index}>
             <div className="hidden md:block">
               <Tab
-                activeClassName="bg-[#171717] border-2 border-[#808080] rounded-lg"
+                className="pt-2"
+                activeClassName="border-t-2 border-white"
                 key={value}
                 value={value}
               >
