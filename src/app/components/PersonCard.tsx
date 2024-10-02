@@ -8,14 +8,11 @@ type PersonCardProps = {
   verified?: boolean;
   photo: string;
   showPlay: boolean;
-  backgroundColor?: string;
-  hoverColor?: string;
   height?: number;
   width?: number;
   additonalClasses?: string[];
 };
 const PersonCard = (person: PersonCardProps) => {
-  const baseClasses = `rounded-full bg-[${person.backgroundColor}] hover:bg-${person.hoverColor}`;
   const additionalClasses = person.additonalClasses?.join(' ');
 
   return (
@@ -24,7 +21,7 @@ const PersonCard = (person: PersonCardProps) => {
       <div>
         <div className="z-[-1] flex h-full justify-center text-center">
           <Image
-            className={baseClasses + ' ' + (additionalClasses ? additionalClasses : '')}
+            className={'rounded-full' + ' ' + additionalClasses}
             src={person.photo}
             alt="personImage"
             width={person.width ? person.width : 150}

@@ -152,8 +152,11 @@ export default function MainBanner() {
                 <div className="flex flex-wrap justify-center gap-x-2 sm:gap-x-6">
                   {personsData.map((data, i) => {
                     return (
-                      <div className="" key={i}>
-                        <PersonCard hoverColor="blue-700" backgroundColor="#242424" {...data} />
+                      <div key={i}>
+                        <PersonCard
+                          additonalClasses={['hover:bg-blue-700', 'bg-[#242424]']}
+                          {...data}
+                        />
                       </div>
                     );
                   })}

@@ -106,12 +106,11 @@ const TryItYourselfBanner = () => {
                       <div key={i}>
                         {i === 0 ? (
                           <PersonCard
-                            additonalClasses={['border-4', 'border-blue-600']}
-                            backgroundColor="#f0f4f9"
+                            additonalClasses={['border-4', 'border-blue-600', 'bg-[#f0f4f9]']}
                             {...data}
                           />
                         ) : (
-                          <PersonCard backgroundColor="#f0f4f9" {...data} />
+                          <PersonCard additonalClasses={['bg-[#f0f4f9]']} {...data} />
                         )}
                       </div>
                     );
@@ -142,14 +141,18 @@ const TryItYourselfBanner = () => {
                       <div key={i}>
                         {i === 0 ? (
                           <PersonCard
-                            additonalClasses={['border-4', 'border-blue-600']}
+                            additonalClasses={['border-4', 'border-blue-600', 'bg-[#f0f4f9]']}
                             height={72}
                             width={72}
-                            backgroundColor="#f0f4f9"
                             {...data}
                           />
                         ) : (
-                          <PersonCard height={72} width={72} backgroundColor="#f0f4f9" {...data} />
+                          <PersonCard
+                            height={72}
+                            width={72}
+                            additonalClasses={['bg-[#f0f4f9]']}
+                            {...data}
+                          />
                         )}
                       </div>
                     );
